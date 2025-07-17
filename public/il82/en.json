@@ -1,0 +1,99 @@
+{
+  "home": "Home",
+  "products": "Products",
+  "about": "About Us",
+  "contact": "Contact Us",
+  "services": "Services",
+  "storeFeatures": "Store Features",
+
+  "support": "Support",
+  "dark": "Dark Mode",
+  "light": "Light Mode",
+  "cart": "Cart",
+  "fastDeliveryAlt": "Fast delivery",
+  "fastDeliveryTitle": "Fast Delivery",
+  "fastDeliveryDesc": "Delivery within 24 hours",
+  "supportAlt": "24/7 Customer Support",
+  "supportTitle": "24/7 Support",
+  "supportDesc": "Support via chat or phone",
+  "refundAlt": "Money Back Guarantee",
+  "refundTitle": "Money Back Guarantee",
+  "refundDesc": "Full refund guarantee within 30 days",
+  "footer": {
+    "subscribeCta": "Subscribe to get the latest updates!",
+    "emailPlaceholder": "Your email address",
+    "subscribeBtn": "Subscribe",
+    "description": "An online store offering a smart, smooth and secure shopping experience. Follow our products and enjoy the offers.",
+    "linksTitle": "Quick Links",
+    "linkHome": "Home",
+    "linkProducts": "Products",
+    "linkAbout": "About Us",
+    "linkContact": "Contact",
+    "supportTitle": "Support",
+    "faq": "FAQs",
+    "privacy": "Privacy Policy",
+    "terms": "Terms & Conditions",
+    "help": "Help Center",
+    "followUs": "Follow Us"
+  },
+  "hero": {
+    "title": "Everything you need in one place.",
+    "description": "Discover the best products from electronics to fashion with unbeatable prices and fast delivery.",
+    "cta": "Start Shopping Now"
+  },
+  "usp": {
+    "fast_delivery": "Fast & Safe Delivery",
+    "cash_on_delivery": "Cash on Delivery",
+    "free_return": "Free Return within 14 Days"
+  },
+  "featuredCategories": "Featured Categories",
+  "electronics": "Electronics",
+  "clothing": "Clothing",
+  "beauty": "Beauty",
+  "viewProducts": "View Products",
+  "ABOUT_US": {
+    "TITLE": "About Us",
+    "SUBTITLE": "Learn more about our mission, vision, and values.",
+    "PARAGRAPH_1": "Shpoza is your trusted online store, offering a wide range of quality products with great prices. We are dedicated to providing excellent customer service and ensuring your satisfaction with every purchase.",
+    "PARAGRAPH_2": "Our mission is to make shopping easy, enjoyable, and accessible to everyone. Join us on this journey and experience the difference!",
+    "LEARN_MORE": "Learn More",
+    "CONTACT_US": "Contact Us"
+  },
+  "CONTACT": {
+    "TITLE": "Let's Connect",
+    "DESCRIPTION": "I'm Ahmed Hashim, a Frontend Angular developer. I help individuals and companies build modern, responsive websites that drive success.",
+    "FOOTER": "Looking forward to hearing from you!"
+  },
+  "SERVICES": {
+    "TITLE": "Why Shop with Shopza?",
+    "SUBTITLE": "A full range of services that make shopping and selling easier than ever.",
+    "FAST_DELIVERY": {
+      "TITLE": "Fast & Secure Delivery",
+      "DESCRIPTION": "We work with trusted couriers to ensure quick delivery across the country."
+    },
+    "SECURE_PAYMENT": {
+      "TITLE": "Secure Online Payment",
+      "DESCRIPTION": "Multiple encrypted payment options including Visa, Mastercard, and local wallets."
+    },
+    "PRODUCTS": {
+      "TITLE": "Wide Product Variety",
+      "DESCRIPTION": "From fashion to electronics, we offer thousands of products in every category."
+    },
+    "SUPPORT": {
+      "TITLE": "24/7 Customer Support",
+      "DESCRIPTION": "Our support team is available around the clock to help you anytime."
+    },
+    "SELL_EASY": {
+      "TITLE": "Sell with Ease",
+      "DESCRIPTION": "Easy onboarding for sellers with full control through powerful dashboards."
+    },
+    "RETURNS": {
+      "TITLE": "Hassle-Free Returns",
+      "DESCRIPTION": "Return products within 14 days — quick and easy, no questions asked."
+    }
+  },
+  "category": {
+    "title": "Shop by Category",
+    "exploreMore": "Explore More"
+  }
+}

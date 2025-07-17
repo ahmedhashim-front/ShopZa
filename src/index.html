@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!-- عنوان الصفحة -->
+    <title>Shopza</title>
+
+    <!-- أيقونة المتصفح -->
+    <link rel="icon" type="image/png" href="./icon/social.png" />
+
+    <!-- إعدادات الأساس -->
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body>
+    <app-root></app-root>
+<script>
+  (function () {
+    const dark = localStorage.getItem('darkMode');
+    if (dark === 'true') {
+      document.documentElement.classList.add('dark');
+    }
+  })();
+</script>
+
+  </body>
+</html>
+

@@ -1,0 +1,168 @@
+<div class="home-container">
+  <!-- 1. Hero Section -->
+  <section
+    class="bg-[var(--color-bg)] text-[var(--color-text-main)] py-10 md:py-16"
+  >
+    <div
+      class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+    >
+      <!-- 📄 Text Content -->
+      <div class="space-y-6 text-center md:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight">
+          {{ "hero.title" | translate }}
+        </h1>
+        <p class="text-lg text-[var(--color-text-secondary)]">
+          {{ "hero.description" | translate }}
+        </p>
+        <a
+          routerLink="/products"
+          class="inline-block bg-[var(--color-primary)] text-[var(--color-white)] font-semibold py-3 px-6 rounded shadow hover:bg-[var(--color-hover)] transition duration-300"
+        >
+          {{ "hero.cta" | translate }}
+        </a>
+      </div>
+
+      <!-- 🖼️ Carousel Section -->
+      <div class="relative w-full">
+        <owl-carousel-o
+          [options]="customOptions"
+          class="rounded-lg overflow-hidden shadow-lg"
+        >
+          <ng-template carouselSlide>
+            <img
+              src="https://ik.imagekit.io/ahmedhashim/img/category/sunglasses.jpg?updatedAt=1752518672657"
+              alt="Slider Image 1"
+              class="w-full h-72 md:h-96 object-cover rounded-lg border border-gray-300 shadow-lg hover:shadow-teal-500/50"
+            />
+          </ng-template>
+          <ng-template carouselSlide>
+            <img
+              src="https://ik.imagekit.io/ahmedhashim/img/category/mens-shoes.jpg?updatedAt=1752518665967"
+              alt="Slider Image 2"
+              class="w-full h-72 md:h-96 object-cover rounded-lg border border-gray-300 shadow-lg hover:shadow-teal-500/50"
+            />
+          </ng-template>
+          <ng-template carouselSlide>
+            <img
+              src="https://ik.imagekit.io/ahmedhashim/img/category/mobile-accessories.jpg?updatedAt=1752518638343"
+              alt="Slider Image 3"
+              class="w-full h-72 md:h-96 object-cover rounded-lg border border-gray-300 shadow-lg hover:shadow-teal-500/50"
+            />
+          </ng-template>
+          <ng-template carouselSlide>
+            <img
+              src="https://ik.imagekit.io/ahmedhashim/img/category/laptops.jpg?updatedAt=1752518632886"
+              alt="Slider Image 4"
+              class="w-full h-72 md:h-96 object-cover rounded-lg border border-gray-300 shadow-lg hover:shadow-teal-500/50"
+            />
+          </ng-template>
+        </owl-carousel-o>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Featured Categories (✨ Lazy-loaded) -->
+  @defer (on viewport) {
+  <app-category [previewOnly]="true" />
+
+  } @placeholder {
+  <div class="text-center py-16 text-gray-500 animate-pulse">
+    Loading categories...
+  </div>
+  }
+
+  <!-- 3. Special Offers Slider -->
+  <section class="special-offers bg-gray-100 py-16 text-center">
+    <h2 class="text-2xl mb-10 text-gray-800">عروض مميزة</h2>
+  </section>
+
+  <!-- 4. Store Features -->
+
+  <section class="store-features py-16 text-center">
+    <h2
+      class="text-2xl mb-10 text-[var(--color-primary)] dark:text-[var(--color-text-secondary)]"
+    >
+      {{ "storeFeatures" | translate }}
+    </h2>
+    <div class="features-container flex flex-wrap justify-center gap-8">
+      <div class="flex justify-center gap-6 py-16 flex-wrap max-w-5xl mx-auto">
+        <div
+          class="feature-card flex flex-col items-center w-64 p-6 bg-white dark:bg-[var(--color-secondary)] rounded-lg shadow-md category-card text-center"
+        >
+          <img
+            src="./img/fastdelivery.jpg"
+            alt="{{ 'fastDeliveryAlt' | translate }}"
+            class="w-52 h-40 object-contain mb-4"
+          />
+          <h4 class="text-xl mb-2 text-[var(--color-primary)] font-semibold">
+            {{ "fastDeliveryTitle" | translate }}
+          </h4>
+          <p class="text-[var(--color-text-secondary)]">
+            {{ "fastDeliveryDesc" | translate }}
+          </p>
+        </div>
+
+        <div
+          class="feature-card flex flex-col items-center w-64 p-6 bg-white dark:bg-[var(--color-secondary)] rounded-lg shadow-md category-card text-center"
+        >
+          <img
+            src="./img/customer support.jpg"
+            alt="{{ 'supportAlt' | translate }}"
+            class="w-52 h-40 object-contain mb-4"
+          />
+          <h4 class="text-xl mb-2 text-[var(--color-primary)] font-semibold">
+            {{ "supportTitle" | translate }}
+          </h4>
+          <p class="text-[var(--color-text-secondary)]">
+            {{ "supportDesc" | translate }}
+          </p>
+        </div>
+
+        <div
+          class="feature-card flex flex-col items-center w-64 p-6 bg-white dark:bg-[var(--color-secondary)] rounded-lg shadow-md category-card text-center"
+        >
+          <img
+            src="./img/money.jpg"
+            alt="{{ 'refundAlt' | translate }}"
+            class="w-52 h-40 object-contain mb-4"
+          />
+          <h4 class="text-xl mb-2 text-[var(--color-primary)] font-semibold">
+            {{ "refundTitle" | translate }}
+          </h4>
+          <p class="text-[var(--color-text-secondary)]">
+            {{ "refundDesc" | translate }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Testimonials -->
+  <section class="testimonials bg-gray-100 py-16 text-center">
+    <h2 class="text-2xl mb-10 text-gray-800">آراء العملاء</h2>
+    <div class="testimonials-container flex flex-wrap justify-center gap-8">
+      <div
+        class="testimonial-card w-1/2 p-6 mb-8 bg-white rounded-lg shadow-md"
+      >
+        <p>"منتجات رائعة وسرعة في الشحن."</p>
+        <h5>- أحمد سعيد</h5>
+      </div>
+      <div
+        class="testimonial-card w-1/2 p-6 mb-8 bg-white rounded-lg shadow-md"
+      >
+        <p>"تجربة تسوق مذهلة، بالتأكيد سأعود مجددًا."</p>
+        <h5>- فاطمة حسين</h5>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Final CTA -->
+  <section class="final-cta py-16 text-center">
+    <a
+      routerLink="/category"
+      class="cta-button bg-teal-600 text-white py-3 px-6 rounded-lg text-xl hover:bg-teal-700 transition"
+    >
+      استكشف متجرنا الآن
+    </a>
+  </section>
+</div>

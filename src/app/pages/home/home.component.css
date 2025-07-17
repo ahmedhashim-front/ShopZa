@@ -1,0 +1,39 @@
+/* 🌞 الوضع الافتراضي – Light Mode */
+
+/* 🌚 الوضع الليلي – Dark Mode */
+
+/* Featured Categories */
+.categories-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Store Features */
+.features-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Testimonials */
+.testimonials-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+/* Final CTA Section */
+.final-cta {
+  text-align: center;
+  margin: 60px 0;
+}
+.final-cta .cta-button {
+  background-color: var(--color-primary);
+  padding: 20px 50px;
+  font-size: 1.5rem;
+}
+.category-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s;
+}

@@ -1,0 +1,72 @@
+<section
+  class="min-h-screen flex flex-col lg:flex-row items-center justify-center px-8 py-16 gap-12 bg-gradient-to-b from-[var(--color-secondary)] via-[var(--color-bg)] to-[var(--color-secondary)] transition-colors duration-500"
+  aria-label="Contact Section"
+>
+  <!-- الصورة -->
+  <div class="flex justify-center lg:w-1/2">
+    <img
+      src="https://ik.imagekit.io/ahmedhashim/img/ahmed.png?updatedAt=1752518746815"
+      alt="Ahmed Hashim"
+      class="rounded-full shadow-2xl w-80 h-80 object-cover object-top border-4 border-[var(--color-primary)]"
+    />
+  </div>
+
+  <!-- المحتوى -->
+  <div
+    class="lg:w-1/2 space-y-8 text-center lg:text-left text-[var(--color-text-main)]"
+  >
+    <h1 class="text-5xl font-extrabold text-[var(--color-primary)]">
+      {{ "CONTACT.TITLE" | translate }}
+    </h1>
+    <p class="text-lg text-[var(--color-text-secondary)] leading-relaxed">
+      {{ "CONTACT.DESCRIPTION" | translate }}
+    </p>
+
+    <div
+      class="flex flex-col sm:flex-row sm:flex-wrap justify-center lg:justify-start gap-6"
+    >
+      <!-- LinkedIn -->
+      <a
+        href="https://www.linkedin.com/in/ahmedhashim-frontend"
+        target="_blank"
+        class="flex items-center gap-3 text-[var(--color-primary)] hover:text-[var(--color-hover)] transition"
+      >
+        <i class="fab fa-linkedin text-2xl"></i>
+        <span class="font-semibold">LinkedIn</span>
+      </a>
+
+      <!-- GitHub -->
+      <a
+        href="https://github.com/ahmedhashim-front"
+        target="_blank"
+        class="flex items-center gap-3 text-[var(--color-primary)] hover:text-[var(--color-hover)] transition"
+      >
+        <i class="fab fa-github text-2xl"></i>
+        <span class="font-semibold">GitHub</span>
+      </a>
+
+      <!-- WhatsApp -->
+      <a
+        href="https://wa.me/201117484073"
+        target="_blank"
+        class="flex items-center gap-3 text-[var(--color-primary)] hover:text-[var(--color-hover)] transition"
+      >
+        <i class="fab fa-whatsapp text-2xl"></i>
+        <span class="font-semibold">WhatsApp</span>
+      </a>
+
+      <!-- Email -->
+      <a
+        href="mailto:ahmed.hashim.front@gmail.com"
+        class="flex items-center gap-3 text-[var(--color-primary)] hover:text-[var(--color-hover)] transition"
+      >
+        <i class="fas fa-envelope text-2xl"></i>
+        <span class="font-semibold">Email</span>
+      </a>
+    </div>
+
+    <p class="pt-8 text-sm italic text-[var(--color-text-secondary)]">
+      {{ "CONTACT.FOOTER" | translate }}
+    </p>
+  </div>
+</section>

@@ -1,0 +1,63 @@
+@defer (on viewport) {
+<section
+  class="container max-w-4xl mx-auto py-10 px-4 flex flex-col items-center"
+>
+  <h2 class="text-3xl font-bold mb-12 text-center text-[var(--color-primary)]">
+    Shop by Category
+  </h2>
+
+  @for (group of previewOnly ? categoryGroups.slice(0, 2) : categoryGroups;
+  track group.slug) {
+  <div
+    class="mb-14 w-full flex flex-col items-center bg-[var(--color-white)] dark:bg-[var(--color-secondary)] rounded-xl shadow-md p-6"
+  >
+    <!-- Group Title -->
+    <h3
+      class="text-2xl font-semibold mb-6 text-center text-[var(--color-text-main)] border-b border-[var(--color-primary)] pb-3 capitalize w-full"
+    >
+      {{ group.title }}
+    </h3>
+
+    <!-- Categories Grid -->
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-center w-full"
+    >
+      @for (cat of group.categories; track cat) {
+      <a
+        [routerLink]="['/category-product']"
+        [queryParams]="{ cat: cat }"
+        class="bg-[var(--color-white)] dark:bg-[var(--color-secondary)] p-5 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center"
+      >
+        <img
+          [src]="'./img/category/' + cat + '.jpg'"
+          alt="{{ cat }}"
+          class="w-full h-40 object-cover rounded-lg mb-4 border border-[var(--color-border)] dark:border-[var(--color-border-dark)]"
+        />
+        <h4
+          class="text-xl font-semibold text-[var(--color-primary)] capitalize"
+        >
+          {{ cat.replace("-", " ") }}
+        </h4>
+      </a>
+      }
+    </div>
+  </div>
+  }
+
+  <!-- زر استكشف المزيد -->
+  @if (previewOnly) {
+  <div class="mt-6 text-center w-full">
+    <a
+      routerLink="/category"
+      class="inline-block px-6 py-2 bg-[var(--color-primary)] text-white rounded-full shadow hover:shadow-lg transition"
+    >
+      {{ "category.exploreMore" | translate }}
+    </a>
+  </div>
+  }
+</section>
+} @placeholder {
+<div class="text-center py-16 text-[var(--color-text-secondary)] animate-pulse">
+  Loading categories...
+</div>
+}

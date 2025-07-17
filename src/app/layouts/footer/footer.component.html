@@ -1,0 +1,159 @@
+<footer
+  class="w-full bg-[var(--color-secondary)] dark:bg-[var(--color-bg)] text-[var(--color-text-secondary)] transition-colors duration-300 pt-16 pb-8 px-6"
+>
+  <!-- 📧 قسم الاشتراك -->
+  <div
+    class="max-w-6xl mx-auto mb-12 bg-[var(--color-primary)] dark:bg-[var(--color-hover)] text-white rounded-lg p-6 flex flex-col md:flex-row items-center justify-between shadow-md"
+  >
+    <div class="text-lg font-semibold mb-4 md:mb-0">
+      {{ "footer.subscribeCta" | translate }}
+    </div>
+    <div class="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+      <input
+        type="email"
+        [placeholder]="'footer.emailPlaceholder' | translate"
+        class="px-4 py-2 rounded-md text-gray-900 w-full sm:w-auto"
+      />
+      <button
+        class="px-4 py-2 bg-white text-[var(--color-primary)] rounded-md font-semibold hover:bg-gray-100 transition"
+      >
+        {{ "footer.subscribeBtn" | translate }}
+      </button>
+    </div>
+  </div>
+
+  <!-- 🧱 المحتوى الرئيسي للفوتر -->
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8">
+    <!-- 🏪 الشعار والوصف -->
+    <div>
+      <h2 class="text-3xl font-bold text-[var(--color-primary)] mb-3">
+        Shopza
+      </h2>
+      <p class="text-sm leading-relaxed">
+        {{ "footer.description" | translate }}
+      </p>
+    </div>
+
+    <!-- 🔗 روابط الموقع -->
+    <div>
+      <h3
+        class="text-lg font-semibold text-[var(--color-text-main)] dark:text-[var(--color-primary)] mb-4"
+      >
+        {{ "footer.linksTitle" | translate }}
+      </h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a
+            routerLink="/home"
+            class="hover:text-[var(--color-primary)] transition"
+          >
+            {{ "footer.linkHome" | translate }}
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="products"
+            class="hover:text-[var(--color-primary)] transition"
+          >
+            {{ "footer.linkProducts" | translate }}
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="/about"
+            class="hover:text-[var(--color-primary)] transition"
+          >
+            {{ "footer.linkAbout" | translate }}
+          </a>
+        </li>
+        <li>
+          <a
+            routerLink="contact"
+            class="hover:text-[var(--color-primary)] transition"
+          >
+            {{ "footer.linkContact" | translate }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 🛠️ الدعم -->
+    <div>
+      <h3
+        class="text-lg font-semibold text-[var(--color-text-main)] dark:text-[var(--color-primary)] mb-4"
+      >
+        {{ "footer.supportTitle" | translate }}
+      </h3>
+      <ul class="space-y-2 text-sm">
+        <li>
+          <a href="#" class="hover:text-[var(--color-primary)] transition">
+            {{ "footer.faq" | translate }}
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-[var(--color-primary)] transition">
+            {{ "footer.privacy" | translate }}
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-[var(--color-primary)] transition">
+            {{ "footer.terms" | translate }}
+          </a>
+        </li>
+        <li>
+          <a href="#" class="hover:text-[var(--color-primary)] transition">
+            {{ "footer.help" | translate }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- 🌐 تابعنا + تبديل اللغة -->
+    <div>
+      <h3
+        class="text-lg font-semibold text-[var(--color-text-main)] dark:text-[var(--color-primary)] mb-4"
+      >
+        {{ "footer.followUs" | translate }}
+      </h3>
+      <div class="flex items-center gap-4 text-2xl mb-4">
+        <a
+          href="#"
+          aria-label="Facebook"
+          class="hover:text-[var(--color-primary)] transition"
+        >
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a
+          href="#"
+          aria-label="Instagram"
+          class="hover:text-[var(--color-primary)] transition"
+        >
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a
+          href="#"
+          aria-label="Twitter"
+          class="hover:text-[var(--color-primary)] transition"
+        >
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a
+          href="#"
+          aria-label="LinkedIn"
+          class="hover:text-[var(--color-primary)] transition"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ⚖️ الحقوق -->
+  <div
+    class="mt-12 border-t border-[var(--color-text-secondary)] pt-6 text-center text-xs text-[var(--color-text-secondary)]"
+  >
+    © 2025
+    <span class="text-[var(--color-primary)] font-semibold">Shopza</span>.
+    {{ "footer.rights" | translate }}
+  </div>
+</footer>

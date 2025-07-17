@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@import "flowbite/src/themes/default";
+@plugin "flowbite/plugin";
+@source "../node_modules/flowbite";
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🌞 الوضع الافتراضي – Light Mode */
+:root {
+  --color-primary: #008080; /* اللون الأساسي – Teal */
+  --color-secondary: #f5f5f5; /* اللون الثانوي – رمادي فاتح */
+  --color-bg: #f9f9f9; /* خلفية الموقع */
+  --color-text-main: #333333; /* نص أساسي */
+  --color-text-secondary: #666666; /* نص ثانوي */
+  --color-hover: #006666; /* تأثير hover */
+  --color-white: #ffffff; /* أبيض صريح */
+}
+
+/* 🌚 الوضع الليلي – Dark Mode */
+.dark {
+  --color-primary: #00b3b3;
+  --color-secondary: #1e1e1e;
+  --color-bg: #121212;
+  --color-text-main: #eeeeee;
+  --color-text-secondary: #cccccc;
+  --color-hover: #00dddd;
+  --color-white: #1e1e1e;
+}
+/* ✅ إعدادات عامة */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-main);
+  font-family: "Crimson Pro", sans-serif;
+  padding: 2rem;
+}
